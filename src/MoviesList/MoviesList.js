@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
+import './MoviesList.css';
 
 class MoviesList extends Component {
 
@@ -10,7 +10,7 @@ class MoviesList extends Component {
     
         const moviesListArray = this.props.store.moviesReducer.map((item, index) => {
             return (
-                <div>
+                <div className="movieItem">
                     <img src={item.poster} />
                     <h4>{item.title}</h4>
                 </div>
