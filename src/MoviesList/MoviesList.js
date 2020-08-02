@@ -7,7 +7,7 @@ class MoviesList extends Component {
 
 
     render() {
-        
+    
         const moviesListArray = this.props.store.moviesReducer.map((item, index) => {
             return (
                 <div>
@@ -18,10 +18,12 @@ class MoviesList extends Component {
         })
         
         return (
-            <div>{moviesListArray}</div>
+            <div></div>
         )
     }
 }
+
+
 
 const mapStoreToProps = (store) => ({store});
 
