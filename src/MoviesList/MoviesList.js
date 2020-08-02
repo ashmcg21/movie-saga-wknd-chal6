@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import './MoviesList.css';
+import './MovieList.css';
 
 class MoviesList extends Component {
 
@@ -18,7 +18,7 @@ class MoviesList extends Component {
         })
         
         return (
-            <div></div>
+        <div>{moviesListArray}</div>
         )
     }
 }
